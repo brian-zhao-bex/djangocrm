@@ -14,6 +14,6 @@ class Home(View):
         return self.get_home_page(request, *args, **kwargs)
     
     def get_home_page(self, request, *args, **kwargs):
-        template = 'base.html'
+        template = 'wine.html'
         return r(template, {}, request)
     
