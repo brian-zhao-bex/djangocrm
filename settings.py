@@ -139,6 +139,7 @@ INSTALLED_APPS = (
     'contacts',
     'base',
     'cellar',
+    'tweets',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

@@ -7,6 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
+    url(r'', include('djangocrm.tweets.urls')),
     url(r'^$', Home.as_view(), name='home'),
     # url(r'^mysite/', include('mysite.foo.urls')),
 
@@ -16,4 +17,5 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^contacts/', include('djangocrm.contacts.urls')),
+    
 )
